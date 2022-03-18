@@ -20,6 +20,7 @@ public class HomePage {
 	//contact us;
 	By welcomeUser = By.cssSelector("a[id='nameofuser']");
 	
+	By secondProduct = By.cssSelector("a[href='prod.html?idp_=2']");
 	
 	public WebElement SignUpButton() {
 		
@@ -45,4 +46,9 @@ public class HomePage {
 	public WebElement WelcomeUser() {
 		return _driver.findElement(welcomeUser);
 	}
+	
+	public WebElement SecondProduct() {
+		return _driver.findElement(secondProduct);
+	}
+
 }
