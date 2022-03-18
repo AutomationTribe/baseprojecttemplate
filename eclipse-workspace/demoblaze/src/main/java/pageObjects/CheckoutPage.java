@@ -17,6 +17,9 @@ public class CheckoutPage {
 	By creditCard = By.cssSelector("input[id='card']");
 	By month = By.cssSelector("input[id='month']");
 	By year = By.cssSelector("input[id='year']");
+	By checkoutButton = By.xpath("//*[@id=\"orderModal\"]/div/div/div[3]/button[2]");
+	By orderSuccess = By.xpath("/html/body/div[10]");
+	By orderConfirm = By.xpath("/html/body/div[10]/div[7]/div/button");
 	
 	public WebElement Name() {
 		return _driver.findElement(name);
@@ -36,5 +39,17 @@ public class CheckoutPage {
 	
 	public WebElement Year() {
 		return _driver.findElement(year);
+	}
+	
+	public WebElement CheckoutButton() {
+		return _driver.findElement(checkoutButton);
+	}
+	
+	public WebElement OrderSuccess() {
+		return _driver.findElement(orderSuccess);
+	}
+	
+	public WebElement OrderConfirm() {
+		return _driver.findElement(orderConfirm);
 	}
 }
