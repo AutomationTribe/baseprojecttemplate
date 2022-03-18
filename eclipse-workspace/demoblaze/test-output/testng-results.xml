@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-03-18T21:05:03 WAT" name="Default suite" finished-at="2022-03-18T21:05:07 WAT" duration-ms="4092">
+    <groups>
+    </groups>
+    <test started-at="2022-03-18T21:05:03 WAT" name="Default test" finished-at="2022-03-18T21:05:07 WAT" duration-ms="4092">
+      <class name="demoblaze.AboutUsTest">
+        <test-method is-config="true" signature="NavigateToAboutUs()[pri:0, instance:demoblaze.AboutUsTest@3c73951]" started-at="2022-03-18T21:05:03 WAT" name="NavigateToAboutUs" finished-at="2022-03-18T21:05:06 WAT" duration-ms="3377" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NavigateToAboutUs -->
+        <test-method signature="PlayVideo()[pri:0, instance:demoblaze.AboutUsTest@3c73951]" started-at="2022-03-18T21:05:06 WAT" name="PlayVideo" description="Tests user can playvideo in about us" finished-at="2022-03-18T21:05:07 WAT" duration-ms="468" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PlayVideo -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:demoblaze.AboutUsTest@3c73951]" started-at="2022-03-18T21:05:07 WAT" name="TearDown" finished-at="2022-03-18T21:05:07 WAT" duration-ms="172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- demoblaze.AboutUsTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -3,22 +3,28 @@ package basePackage;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Base {
+	
+	public WebDriver _driver;
 
-	public void InitializeDriver() throws IOException {
+	public void InitDriver() throws IOException {
 		
 		System.setProperty("webdriver.chrome.driver", "C:\\\\Users\\\\SBSC\\\\Documents\\\\sbsc\\\\Automation\\\\Programs\\\\chromedriver.exe");
 		
-		ChromeDriver driver = new ChromeDriver();
+		 _driver = new ChromeDriver();
+		
+		_driver.manage().window().maximize();
 		
 		String url =  LoadProp().getProperty("url");
 		
-		driver.manage().window().maximize();
+		_driver.get(url);
 		
-		driver.get(url);
+		_driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 	}
 	

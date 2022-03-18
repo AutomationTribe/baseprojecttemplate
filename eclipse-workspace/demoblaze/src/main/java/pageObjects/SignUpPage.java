@@ -14,7 +14,8 @@ public class SignUpPage {
 	}
 	
 	By SignUpUsername = By.cssSelector("input[id='sign-username']");
-	By SignUpPassword = By.cssSelector("input[type='sign-password']");
+	By SignUpPassword = By.cssSelector("input[id='sign-password']");
+	By SignUpButton =  By.xpath("//*[@id=\"signInModal\"]/div/div/div[3]/button[2]");
 	
 	public WebElement SignUpUsername() {
 		return _driver.findElement(SignUpUsername);
@@ -22,5 +23,9 @@ public class SignUpPage {
 	
 	public WebElement SignUpPassword() {
 		return _driver.findElement(SignUpPassword);
+	}
+	
+	public WebElement SignUpButton() {
+		return _driver.findElement(SignUpButton);
 	}
 }

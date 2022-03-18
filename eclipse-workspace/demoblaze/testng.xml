@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="demoblaze.SignUpTest"/>
+      <class name="demoblaze.ContactTest"/>
+      <class name="demoblaze.AboutUsTest"/>
+      <class name="demoblaze.LoginTest"/>
+      <class name="demoblaze.ShoppingCartTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
