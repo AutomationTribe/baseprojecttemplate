@@ -19,7 +19,7 @@ public class ProductDetailTest extends Base {
 	@BeforeTest
 	public void NavigateToProductDetail() throws IOException {
 		InitDriver();
-		WebDriverWait wait = new WebDriverWait(_driver,15);
+		WebDriverWait wait = new WebDriverWait(_driver,10);
 	
 		HomePage home = new HomePage(_driver);
 		wait.until(ExpectedConditions.visibilityOf(home.SecondProduct()));
@@ -29,7 +29,7 @@ public class ProductDetailTest extends Base {
 	@Test(groups={"ProductDetailTest.AddToCart"})
 	public void AddToCart() {
 		
-		WebDriverWait wait = new WebDriverWait(_driver,15);
+		WebDriverWait wait = new WebDriverWait(_driver,10);
 		ProductDetailPage productDetail = new ProductDetailPage(_driver);
 		productDetail.AddToCartButton().click();
 		
@@ -38,6 +38,7 @@ public class ProductDetailTest extends Base {
 		String actual = _driver.switchTo().alert().getText();
 		String expected = "Product added";
 		assertEquals(actual,expected);
+		_driver.switchTo().alert().accept();
 		
 	}
 	
