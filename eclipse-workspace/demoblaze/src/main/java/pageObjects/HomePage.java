@@ -22,6 +22,9 @@ public class HomePage {
 	
 	By secondProduct = By.cssSelector("a[href='prod.html?idp_=2']");
 	
+	By laptopsCat =  By.linkText("Laptops");
+	By MonitorsCat =  By.linkText("Monitors");
+	
 	public WebElement SignUpButton() {
 		
 		return _driver.findElement(signUpButton);
@@ -47,8 +50,16 @@ public class HomePage {
 		return _driver.findElement(welcomeUser);
 	}
 	
+	
 	public WebElement SecondProduct() {
 		return _driver.findElement(secondProduct);
 	}
 
+	public WebElement LaptopCat() {
+	return _driver.findElement(laptopsCat);	
+	}
+	
+	public WebElement MonitorCat() {
+		return _driver.findElement(laptopsCat);	
+		}
 }

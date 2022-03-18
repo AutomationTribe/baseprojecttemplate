@@ -1,25 +1,160 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-18T21:05:03 WAT" name="Default suite" finished-at="2022-03-18T21:05:07 WAT" duration-ms="4092">
+  <suite started-at="2022-03-18T23:17:36 WAT" name="Default suite" finished-at="2022-03-18T23:18:07 WAT" duration-ms="31548">
     <groups>
+      <group name="ProductDetailTest.AddToCart">
+        <method signature="ProductDetailTest.AddToCart()[pri:0, instance:demoblaze.ProductDetailTest@3e84448c]" name="AddToCart" class="demoblaze.ProductDetailTest"/>
+      </group> <!-- ProductDetailTest.AddToCart -->
     </groups>
-    <test started-at="2022-03-18T21:05:03 WAT" name="Default test" finished-at="2022-03-18T21:05:07 WAT" duration-ms="4092">
-      <class name="demoblaze.AboutUsTest">
-        <test-method is-config="true" signature="NavigateToAboutUs()[pri:0, instance:demoblaze.AboutUsTest@3c73951]" started-at="2022-03-18T21:05:03 WAT" name="NavigateToAboutUs" finished-at="2022-03-18T21:05:06 WAT" duration-ms="3377" status="PASS">
+    <test started-at="2022-03-18T23:17:36 WAT" name="Default test" finished-at="2022-03-18T23:18:07 WAT" duration-ms="31548">
+      <class name="demoblaze.ProductDetailTest">
+        <test-method is-config="true" signature="NavigateToProductDetail()[pri:0, instance:demoblaze.ProductDetailTest@3e84448c]" started-at="2022-03-18T23:17:36 WAT" name="NavigateToProductDetail" finished-at="2022-03-18T23:17:41 WAT" duration-ms="5741" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- NavigateToAboutUs -->
-        <test-method signature="PlayVideo()[pri:0, instance:demoblaze.AboutUsTest@3c73951]" started-at="2022-03-18T21:05:06 WAT" name="PlayVideo" description="Tests user can playvideo in about us" finished-at="2022-03-18T21:05:07 WAT" duration-ms="468" status="PASS">
+        </test-method> <!-- NavigateToProductDetail -->
+        <test-method signature="AddToCart()[pri:0, instance:demoblaze.ProductDetailTest@3e84448c]" started-at="2022-03-18T23:17:41 WAT" name="AddToCart" finished-at="2022-03-18T23:17:43 WAT" duration-ms="1835" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- PlayVideo -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:demoblaze.AboutUsTest@3c73951]" started-at="2022-03-18T21:05:07 WAT" name="TearDown" finished-at="2022-03-18T21:05:07 WAT" duration-ms="172" status="PASS">
+        </test-method> <!-- AddToCart -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:demoblaze.ProductDetailTest@3e84448c]" started-at="2022-03-18T23:18:07 WAT" name="TearDown" finished-at="2022-03-18T23:18:07 WAT" duration-ms="23" status="FAIL">
+          <exception class="org.openqa.selenium.UnhandledAlertException">
+            <message>
+              <![CDATA[unexpected alert open: {Alert text : Product added}
+  (Session info: chrome=99.0.4844.74): Product added
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'DESKTOP-EC1SC6K', ip: '192.168.43.189', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.74, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\SBSC\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51918}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2f28b81ae4f38bf0243eae4184c93c9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Product added}
+  (Session info: chrome=99.0.4844.74): Product added
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'DESKTOP-EC1SC6K', ip: '192.168.43.189', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.74, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\SBSC\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51918}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2f28b81ae4f38bf0243eae4184c93c9
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)
+at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:487)
+at demoblaze.ProductDetailTest.TearDown(ProductDetailTest.java:46)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.afterRun(TestRunner.java:877)
+at org.testng.TestRunner.run(TestRunner.java:599)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-      </class> <!-- demoblaze.AboutUsTest -->
+      </class> <!-- demoblaze.ProductDetailTest -->
+      <class name="demoblaze.ShoppingCartTest">
+        <test-method signature="DeleteProduct()[pri:0, instance:demoblaze.ShoppingCartTest@32b260fa]" started-at="2022-03-18T23:17:43 WAT" name="DeleteProduct" description="Test that user can delete a product from the cart" depends-on-groups="ProductDetailTest.AddToCart" finished-at="2022-03-18T23:18:07 WAT" duration-ms="23862" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[text()='Delete']"}
+  (Session info: chrome=99.0.4844.74)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'DESKTOP-EC1SC6K', ip: '192.168.43.189', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.74, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\SBSC\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51941}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a357b702fcbddfc88e5d3f339d2df019
+*** Element info: {Using=xpath, value=//*[text()='Delete']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[text()='Delete']"}
+  (Session info: chrome=99.0.4844.74)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'DESKTOP-EC1SC6K', ip: '192.168.43.189', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.74, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\SBSC\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51941}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a357b702fcbddfc88e5d3f339d2df019
+*** Element info: {Using=xpath, value=//*[text()='Delete']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+at demoblaze.ShoppingCartTest.DeleteProduct(ShoppingCartTest.java:32)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteProduct -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:demoblaze.ShoppingCartTest@32b260fa]" started-at="2022-03-18T23:18:07 WAT" name="TearDown" finished-at="1970-01-01T01:00:00 WAT" duration-ms="-1647641887577" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- demoblaze.ShoppingCartTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

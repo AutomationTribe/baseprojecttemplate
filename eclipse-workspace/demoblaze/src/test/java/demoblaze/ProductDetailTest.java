@@ -26,7 +26,7 @@ public class ProductDetailTest extends Base {
 		home.SecondProduct().click();
 	}
 
-	@Test
+	@Test(groups={"ProductDetailTest.AddToCart"})
 	public void AddToCart() {
 		
 		WebDriverWait wait = new WebDriverWait(_driver,15);

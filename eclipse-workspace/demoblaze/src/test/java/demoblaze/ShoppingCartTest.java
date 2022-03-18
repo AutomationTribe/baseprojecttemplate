@@ -19,27 +19,18 @@ import pageObjects.ShoppingCartPage;
 public class ShoppingCartTest extends Base {
 
 	
-	@BeforeTest()
-	public void AddProductToCart() throws IOException, InterruptedException {
-		
-		InitDriver();
-		
-		ProductDetailPage productDetail = new ProductDetailPage(_driver);
-		productDetail.AddToCartButton().click();
-		_driver.switchTo().alert().accept();
-		
-	}
 	
-	@Test(description="Test that user can delete a product from the cart")
-	public void DeleteProduct() throws IOException {
+	@Test(description="Test that user can delete a product from the cart",dependsOnGroups={"ProductDetailTest.AddToCart"})
+	public void DeleteProduct() throws IOException, InterruptedException {
 		
 		InitDriver();
 		WebDriverWait wait = new WebDriverWait(_driver,60);
 		HomePage home = new HomePage(_driver);
 		home.CartButton().click();
-	
+	    Thread.sleep(10000);
 		ShoppingCartPage cart = new ShoppingCartPage(_driver);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[6]/div/div[1]/div/table/tbody/tr/td[4]/a")));
+		wait.until(ExpectedConditions.textToBePresentInElementLocated(By.xpath("//*[text()='Delete']"),_driver.findElement(By.xpath("//*[text()='Delete']")).getText()));
+		
 		cart.DeleteProduct().click();
 		//assertion
 	}
