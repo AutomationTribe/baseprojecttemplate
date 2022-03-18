@@ -6,16 +6,10 @@
       <class name="demoblaze.ShoppingCartTest">
         <methods>
           <include name="DeleteProduct"/>
+          <include name="AddToCart"/>
           <include name="TearDown"/>
         </methods>
       </class> <!-- demoblaze.ShoppingCartTest -->
-      <class name="demoblaze.ProductDetailTest">
-        <methods>
-          <include name="AddToCart"/>
-          <include name="NavigateToProductDetail"/>
-          <include name="TearDown"/>
-        </methods>
-      </class> <!-- demoblaze.ProductDetailTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

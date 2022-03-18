@@ -8,6 +8,8 @@
       <class name="demoblaze.AboutUsTest"/>
       <class name="demoblaze.LoginTest"/>
       <class name="demoblaze.ShoppingCartTest"/>
+	  <class name="demoblaze.ProductDetailTest"/>
+	  <class name="demoblaze.HomeTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
