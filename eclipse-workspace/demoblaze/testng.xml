@@ -10,6 +10,7 @@
       <class name="demoblaze.ShoppingCartTest"/>
 	  <class name="demoblaze.ProductDetailTest"/>
 	  <class name="demoblaze.HomeTest"/>
+	  <class name="demoblaze.CheckoutTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
