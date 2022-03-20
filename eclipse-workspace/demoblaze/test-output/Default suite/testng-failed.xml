@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="demoblaze.ShoppingCartTest">
+      <class name="demoblaze.CheckoutTest">
         <methods>
-          <include name="DeleteProduct"/>
-          <include name="AddToCart"/>
+          <include name="Initiate"/>
+          <include name="CheckOut"/>
           <include name="TearDown"/>
         </methods>
-      </class> <!-- demoblaze.ShoppingCartTest -->
+      </class> <!-- demoblaze.CheckoutTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

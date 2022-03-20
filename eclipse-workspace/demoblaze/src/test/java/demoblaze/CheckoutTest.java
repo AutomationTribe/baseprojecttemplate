@@ -56,6 +56,7 @@ public class CheckoutTest extends Base{
 	}
 	
 	
+
 	@AfterTest()
 	public void TearDown(){
 		_driver.quit();
