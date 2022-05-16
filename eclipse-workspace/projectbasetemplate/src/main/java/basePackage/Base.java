@@ -7,17 +7,23 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Base {
 	
 	public WebDriver _driver;
 	
-	public void Init(String browser,String url) throws IOException {
+	public void InitDriver(String browser,String url) throws IOException {
+		
 		
 		if(browser.contains("chrome")) {
 			
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\SBSC\\Documents\\sbsc\\Automation\\Programs\\chromedriver.exe");			
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\SBSC\\Documents\\sbsc\\Automation\\Programs\\chromedriver.exe");	
+			
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--headless");
+			
 			_driver = new ChromeDriver();
 			
 		}else if(browser.contains("firefox")) {
